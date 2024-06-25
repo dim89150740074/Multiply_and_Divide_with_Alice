@@ -51,7 +51,7 @@ def generate_example():
 user_answers = {}
 
 
-@app.route('/alice', methods=['POST'])
+@app.route('/', methods=['POST'])
 def alice_skill():
     req = request.json
     user_id = req['session']['user_id']
